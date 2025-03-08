@@ -4,5 +4,5 @@ namespace DotNetAdditional.Services;
 
 public interface IUserService
 {
-    public List<Users> GetUsers();
+    public List<User> GetUsers();
 }

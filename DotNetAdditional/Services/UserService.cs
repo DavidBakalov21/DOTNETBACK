@@ -11,8 +11,8 @@ public class UserService:IUserService
     {
         _dbContext = context;
     }
-    public List<Users> GetUsers()
+    public List<User> GetUsers()
     {
-        return _dbContext.Users.ToList();  
+        return _dbContext.User.ToList();  
     }
 }

@@ -8,7 +8,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="" />
+    <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Contexts/DBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Contexts/DBContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/DTO/LoginDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/DTO/Auth/LoginDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/DTO/RegisterDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/DTO/Auth/RegisterDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Entities/Users.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Migrations/DBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Migrations/DBContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/refint/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/refint/DotNetAdditional.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +114,20 @@
       <workItem from="1741329407762" duration="7488000" />
       <workItem from="1741349501202" duration="8715000" />
       <workItem from="1741359821553" duration="82000" />
+      <workItem from="1741359907730" duration="623000" />
+      <workItem from="1741387255820" duration="4119000" />
+      <workItem from="1741422509903" duration="4535000" />
+      <workItem from="1741445074389" duration="5696000" />
     </task>
+    <task id="LOCAL-00001" summary="auth">
+      <option name="closed" value="true" />
+      <created>1741360058437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741360058437</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +148,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

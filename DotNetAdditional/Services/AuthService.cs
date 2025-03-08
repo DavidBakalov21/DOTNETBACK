@@ -26,50 +26,52 @@ public class AuthService:IAuthService
 
     public async Task<(string, string)> Register(string username, string password, string email)
     {
-        if (await _dbContext.Users.AnyAsync(u => u.Email == email))
+        if (await _dbContext.User.AnyAsync(u => u.Email == email))
         {
             return ("", "");
         }
         var hashedPassword = HashPassword(password);
-       await _dbContext.Users.AddAsync(new Users
+       await _dbContext.User.AddAsync(new User
         {
             Username = username,
             Email = email,
-            Password = hashedPassword
+            Password = hashedPassword,
+            Role= "user"
         });
        await _dbContext.SaveChangesAsync();
-        var at = GenerateAT(email);
-        var rt = GenerateRT(email);
+        var at = GenerateAT(email, "user");
+        var rt = GenerateRT(email, "user");
         return (at, rt);
     }
 
     public async Task<(string, string)> Login(string email, string password)
     {
-        var user =await _dbContext.Users.FirstAsync(u => u.Email == email);
+        var user =await _dbContext.User.FirstAsync(u => u.Email == email);
         if (VerifyPassword(password,user.Password))
         {
-         return (GenerateAT(email), GenerateRT(email));
+         return (GenerateAT(email, user.Role), GenerateRT(email, user.Role));
         }
         return ("", "");
     }
 
     public async Task<(string, string)> Refresh(string email)
     {
-        var user =await _dbContext.Users.FirstAsync(u => u.Email == email);
+        var user =await _dbContext.User.FirstAsync(u => u.Email == email);
         if (user is not null)
         {
-            return (GenerateAT(email), GenerateRT(email));
+            return (GenerateAT(email,user.Role), GenerateRT(email, user.Role));
         }
         return ("", "");
     }
-    private string GenerateAT(string userEmail)
+    private string GenerateAT(string userEmail,string role)
     {
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AT_SECRET));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
         var claims = new[]
         {
-            new Claim(ClaimTypes.Email, userEmail)
+            new Claim(ClaimTypes.Email, userEmail),
+            new Claim(ClaimTypes.Role,role)
         };
 
         var token = new JwtSecurityToken(
@@ -80,14 +82,15 @@ public class AuthService:IAuthService
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
-    private string GenerateRT(string userEmail)
+    private string GenerateRT(string userEmail,string role)
     {
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(RT_SECRET));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
         var claims = new[]
         {
-            new Claim(ClaimTypes.Email, userEmail)
+            new Claim(ClaimTypes.Email, userEmail),
+            new Claim(ClaimTypes.Role,role)
         };
 
         var token = new JwtSecurityToken(
