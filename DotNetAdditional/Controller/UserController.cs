@@ -17,11 +17,23 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    [Authorize(AuthenticationSchemes = "Access")]
-    public IActionResult GetUsers()
+    [Authorize(AuthenticationSchemes = "Access", Roles = "admin")]
+    public async Task<IActionResult> GetUsers(int page)
     {
-        var testData = _userService.GetUsers();
+        var testData = await _userService.GetUsers(page);
         return Ok(testData);
+    }
+    
+    [HttpDelete("{id:int}")]
+    [Authorize(AuthenticationSchemes = "Access", Roles = "admin")]
+    public async Task<IActionResult> DeleteUser(int id)
+    {
+        var deleteStatus = await _userService.DeleteUser(id);
+        if (deleteStatus == false)
+        {
+            return NotFound(); 
+        } 
+        return NoContent();
     }
     
 }

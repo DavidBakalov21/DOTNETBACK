@@ -4,5 +4,6 @@ namespace DotNetAdditional.Services;
 
 public interface IUserService
 {
-    public List<User> GetUsers();
+    public Task<User[]> GetUsers(int page);
+    public Task<bool> DeleteUser(int id);
 }

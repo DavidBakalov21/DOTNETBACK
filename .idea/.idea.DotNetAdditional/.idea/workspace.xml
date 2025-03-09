@@ -10,15 +10,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Contexts/DBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Contexts/DBContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/DTO/LoginDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/DTO/Auth/LoginDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/DTO/RegisterDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/DTO/Auth/RegisterDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Entities/Users.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Migrations/DBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Migrations/DBContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/IAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IAuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/UserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
@@ -42,7 +36,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/IAuthService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/822f0377472565b99c3167c333ec9d631630bec5a8754164f048a658ec83/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -117,7 +111,9 @@
       <workItem from="1741359907730" duration="623000" />
       <workItem from="1741387255820" duration="4119000" />
       <workItem from="1741422509903" duration="4535000" />
-      <workItem from="1741445074389" duration="5696000" />
+      <workItem from="1741445074389" duration="6064000" />
+      <workItem from="1741506338548" duration="60000" />
+      <workItem from="1741518130888" duration="11057000" />
     </task>
     <task id="LOCAL-00001" summary="auth">
       <option name="closed" value="true" />
@@ -127,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741360058437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="posts, categories">
+      <option name="closed" value="true" />
+      <created>1741459255855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741459255855</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding mogrations">
+      <option name="closed" value="true" />
+      <created>1741459278315</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741459278315</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +161,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="auth" />
+    <MESSAGE value="posts, categories" />
+    <MESSAGE value="adding mogrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding mogrations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

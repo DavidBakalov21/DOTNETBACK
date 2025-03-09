@@ -2,7 +2,6 @@ using System.Text;
 using DotNetAdditional.Contexts;
 using DotNetAdditional.Services;
 using DotNetEnv;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -68,10 +67,13 @@ builder.Services.AddDbContext<DBContext>(options => options.UseNpgsql(builder.Co
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 var app = builder.Build();
 
 
 app.MapControllers();
+app.UseAuthentication();  
+app.UseAuthorization(); 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -79,8 +81,6 @@ if (app.Environment.IsDevelopment())
 }
 
 #region API
-app.UseAuthentication();  
-app.UseAuthorization(); 
 app.MapGet("/", () => "Hello World!");
 #endregion
 

@@ -1,5 +1,6 @@
 using DotNetAdditional.Contexts;
 using DotNetAdditional.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace DotNetAdditional.Services;
 
@@ -11,8 +12,21 @@ public class UserService:IUserService
     {
         _dbContext = context;
     }
-    public List<User> GetUsers()
+    public async Task<User[]> GetUsers(int page)
     {
-        return _dbContext.User.ToList();  
+      
+        var query = _dbContext.User
+            .AsQueryable(); 
+        return await query
+            .Skip((page - 1) * 10)
+            .Take(10)
+            .ToArrayAsync();
+    }
+    public async Task<bool> DeleteUser(int id)
+    { 
+        await _dbContext.User
+            .Where(p =>  p.Id == id)
+            .ExecuteDeleteAsync();
+        return true;
     }
 }
