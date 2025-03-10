@@ -7,7 +7,7 @@ namespace DotNetAdditional.Services;
 public interface IPostService
 {
     public Task<bool> CreatePost(CreatePostDTO post,string email);
-    public Task<ReturnPostDTO[]> GetPosts(int page, string categories, bool liked, string email,int? creatorId);
+    public Task<ReturnPostDTO[]> GetPosts(int page, string? categories, bool liked, string email,int? creatorId);
     public Task<bool> DeletePost(int id, string email);
     public Task<ReturnOwnPostDTO?> EditPost(UpdatePostDTO newPost, string email);
     public Task<ReturnOwnPostDTO[]> GetOwnPosts(int page,string? categories,string email);

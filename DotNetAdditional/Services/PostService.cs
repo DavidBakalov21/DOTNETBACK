@@ -164,7 +164,7 @@ public class PostService:IPostService
         };
     }
 
-    public async Task<ReturnOwnPostDTO[]> GetOwnPosts(int page, string categories, string email)
+    public async Task<ReturnOwnPostDTO[]> GetOwnPosts(int page, string? categories, string email)
     {
         var userId = await getUserIdByEmail(email);
         int[] categoriesInt = string.IsNullOrWhiteSpace(categories) 

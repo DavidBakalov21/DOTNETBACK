@@ -8,20 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/PostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/PostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IPostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IPostService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/PostService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/refint/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/refint/DotNetAdditional.dll" afterDir="false" />
-    </list>
+    <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,15 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Controller/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Controller/PostController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/DTO/Post/CreatePostDTO.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/AuthService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/CategoryService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/Interfaces/ICategoryService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/Interfaces/IPostService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/PostService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/822f0377472565b99c3167c333ec9d631630bec5a8754164f048a658ec83/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -124,6 +105,7 @@
       <workItem from="1741606938788" duration="1689000" />
       <workItem from="1741610530001" duration="117000" />
       <workItem from="1741610890640" duration="499000" />
+      <workItem from="1741614333936" duration="2571000" />
     </task>
     <task id="LOCAL-00001" summary="auth">
       <option name="closed" value="true" />
@@ -165,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741598371411</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="convert categories">
+      <option name="closed" value="true" />
+      <created>1741616926703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741616926703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +181,8 @@
     <MESSAGE value="adding mogrations" />
     <MESSAGE value="added role authorization, categories" />
     <MESSAGE value="return dtos, minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="return dtos, minor fixes" />
+    <MESSAGE value="convert categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert categories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
