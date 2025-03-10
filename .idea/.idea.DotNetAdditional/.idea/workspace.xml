@@ -10,19 +10,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/CategoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/PostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/PostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/DTO/Post/CreatePostDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/DTO/Post/CreatePostDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/CategoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/CategoryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/ICategoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/ICategoryService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IPostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/Interfaces/IPostService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/PostService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" afterDir="false" />
@@ -40,10 +34,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Controller/UserController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/Interfaces/IUserService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/UserService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Controller/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Controller/PostController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/DTO/Post/CreatePostDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/AuthService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/CategoryService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/Interfaces/ICategoryService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/Interfaces/IPostService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/Services/PostService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/daviddavid/Desktop/projects/dotnet additional/DotNetAdditional/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/822f0377472565b99c3167c333ec9d631630bec5a8754164f048a658ec83/ArgumentNullException.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -122,7 +120,10 @@
       <workItem from="1741445074389" duration="6064000" />
       <workItem from="1741506338548" duration="60000" />
       <workItem from="1741518130888" duration="21729000" />
-      <workItem from="1741597165440" duration="991000" />
+      <workItem from="1741597165440" duration="5760000" />
+      <workItem from="1741606938788" duration="1689000" />
+      <workItem from="1741610530001" duration="117000" />
+      <workItem from="1741610890640" duration="499000" />
     </task>
     <task id="LOCAL-00001" summary="auth">
       <option name="closed" value="true" />
@@ -156,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741545191368</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="return dtos, minor fixes">
+      <option name="closed" value="true" />
+      <created>1741598371411</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741598371411</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +190,8 @@
     <MESSAGE value="posts, categories" />
     <MESSAGE value="adding mogrations" />
     <MESSAGE value="added role authorization, categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="added role authorization, categories" />
+    <MESSAGE value="return dtos, minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="return dtos, minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

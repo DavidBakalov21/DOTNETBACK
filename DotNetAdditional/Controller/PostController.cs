@@ -33,7 +33,7 @@ public class PostController:ControllerBase
 
     [HttpGet]
     [Authorize(AuthenticationSchemes = "Access")]
-    public async Task<IActionResult> GetPosts(int page, int[] categories, bool liked,int? creatorId)
+    public async Task<IActionResult> GetPosts(int page, string? categories, bool liked,int? creatorId)
     {
         var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
         var post = await _postService.GetPosts(page, categories, liked,userEmail, creatorId);
@@ -67,7 +67,7 @@ public class PostController:ControllerBase
 
     [HttpGet("ownPosts")]
     [Authorize(AuthenticationSchemes = "Access")]
-    public async Task<IActionResult> GetOwnPosts(int page, int[] categories)
+    public async Task<IActionResult> GetOwnPosts(int page, string? categories)
     {
         var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
         var post = await _postService.GetOwnPosts(page, categories, userEmail);

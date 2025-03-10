@@ -54,9 +54,16 @@ public class PostService:IPostService
     }
     
 
-    public async Task<ReturnPostDTO[]> GetPosts(int page, int[] categories, bool liked, string email,int? creatorId)
+    public async Task<ReturnPostDTO[]> GetPosts(int page, string? categories, bool liked, string email,int? creatorId)
     {
         var userId= await getUserIdByEmail(email);
+        int[] categoriesInt = string.IsNullOrWhiteSpace(categories) 
+            ? Array.Empty<int>() 
+            : categories.Split(',')
+                .Select(c => int.TryParse(c, out int result) ? result : (int?)null)
+                .Where(c => c.HasValue)
+                .Select(c => c.Value)
+                .ToArray();
         var query = _dbContext.Post
             .Include(p => p.PostCategories)
             .ThenInclude(pc => pc.Category)
@@ -69,9 +76,9 @@ public class PostService:IPostService
         }
 
        
-        if (categories != null && categories.Any())
+        if (categoriesInt != null && categoriesInt.Any())
         {
-            query = query.Where(p => p.PostCategories.Any(pc => categories.Contains(pc.Category.Id)));
+            query = query.Where(p => p.PostCategories.Any(pc => categoriesInt.Contains(pc.Category.Id)));
         }
 
         if (liked)
@@ -157,19 +164,25 @@ public class PostService:IPostService
         };
     }
 
-    public async Task<ReturnOwnPostDTO[]> GetOwnPosts(int page, int[] categories, string email)
+    public async Task<ReturnOwnPostDTO[]> GetOwnPosts(int page, string categories, string email)
     {
         var userId = await getUserIdByEmail(email);
-
+        int[] categoriesInt = string.IsNullOrWhiteSpace(categories) 
+            ? Array.Empty<int>() 
+            : categories.Split(',')
+                .Select(c => int.TryParse(c, out int result) ? result : (int?)null)
+                .Where(c => c.HasValue)
+                .Select(c => c.Value)
+                .ToArray();
         var query = _dbContext.Post
             .Where(p => p.UserId == userId)
             .Include(p => p.PostCategories)
             .ThenInclude(pc => pc.Category)
             .AsQueryable();
 
-        if (categories != null && categories.Any())
+        if (categoriesInt != null && categoriesInt.Any())
         {
-            query = query.Where(p => p.PostCategories.Any(pc => categories.Contains(pc.Category.Id)));
+            query = query.Where(p => p.PostCategories.Any(pc => categoriesInt.Contains(pc.Category.Id)));
         }
 
         return await query
