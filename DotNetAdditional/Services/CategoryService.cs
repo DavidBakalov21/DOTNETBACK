@@ -32,14 +32,15 @@ public class CategoryService:ICategoryService
 
     }
 
-    public async Task<Category[]> GetCategory(int page)
+    public async Task<ReturnCategoryDTO[]> GetCategory()
     {
-        var query = _dbContext.Category
-            .AsQueryable(); 
-        return await query
-            .Skip((page - 1) * 10)
-            .Take(10)
-            .ToArrayAsync();
+        return await _dbContext.Category
+            .Select(c => new ReturnCategoryDTO
+            {
+                Id = c.Id,
+                Name = c.Name
+            })
+            .ToArrayAsync(); 
     }
 
     public async Task<bool> DeleteCategory(int id)
@@ -50,7 +51,7 @@ public class CategoryService:ICategoryService
         return true;
     }
 
-    public async Task<Category?> EditCategory(UpdateCategoryDTO newCategory)
+    public async Task<ReturnCategoryDTO?> EditCategory(UpdateCategoryDTO newCategory)
     {
         var category = await _dbContext.Category
             .Include(p => p.PostCategories) 
@@ -61,6 +62,10 @@ public class CategoryService:ICategoryService
         category.Name = newCategory.newCategoryName;
         await _dbContext.SaveChangesAsync();
 
-        return category;
+        return new ReturnCategoryDTO
+        {
+            Id = category.Id,
+            Name = category.Name
+        };
     }
 }

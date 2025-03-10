@@ -18,10 +18,10 @@ public class PostController:ControllerBase
 
     [HttpPost]
     [Authorize(AuthenticationSchemes = "Access")]
-
     public async Task<IActionResult> CreatePost([FromBody] CreatePostDTO request)
     {
-        var status =await _postService.CreatePost(request);
+        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+        var status =await _postService.CreatePost(request, userEmail);
         if (status)
         {
             return StatusCode(200);
@@ -63,5 +63,23 @@ public class PostController:ControllerBase
         var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
         var updatedPost= await _postService.EditPost(request, userEmail);
         return Ok(updatedPost);
+    }
+
+    [HttpGet("ownPosts")]
+    [Authorize(AuthenticationSchemes = "Access")]
+    public async Task<IActionResult> GetOwnPosts(int page, int[] categories)
+    {
+        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+        var post = await _postService.GetOwnPosts(page, categories, userEmail);
+        return Ok(post);
+    }
+    
+    [HttpPost("toggleLike")]
+    [Authorize(AuthenticationSchemes = "Access")]
+    public async Task<IActionResult> ToggleLike([FromBody] int postId)
+    {
+        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+        var status = await _postService.ToggleLike(postId, userEmail);
+        return Ok(status);
     }
 }

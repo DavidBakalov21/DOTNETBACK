@@ -76,7 +76,7 @@ public class AuthService:IAuthService
 
         var token = new JwtSecurityToken(
             claims: claims,
-            expires: DateTime.UtcNow.AddMinutes(2),
+            expires: DateTime.UtcNow.AddMinutes(2000),
             signingCredentials: credentials);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
@@ -95,18 +95,18 @@ public class AuthService:IAuthService
 
         var token = new JwtSecurityToken(
             claims: claims,
-            expires: DateTime.UtcNow.AddMinutes(10),
+            expires: DateTime.UtcNow.AddMinutes(10000),
             signingCredentials: credentials);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
     
-    public string HashPassword(string password)
+    private string HashPassword(string password)
     {
         return Argon2.Hash(password);
     }
 
-    public bool VerifyPassword(string password, string hash)
+    private bool VerifyPassword(string password, string hash)
     {
         return Argon2.Verify(hash, password);
     }

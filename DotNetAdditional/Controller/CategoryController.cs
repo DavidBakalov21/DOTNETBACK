@@ -31,11 +31,10 @@ public class CategoryController:ControllerBase
 
 
     [HttpGet]
-    [Authorize(AuthenticationSchemes = "Access", Roles = "admin")]
-    public async Task<IActionResult> GetCategories(int page)
+    [Authorize(AuthenticationSchemes = "Access")]
+    public async Task<IActionResult> GetCategories()
     {
-        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-        var post = await _categoryService.GetCategory(page);
+        var post = await _categoryService.GetCategory();
         return Ok(post);
     }
     
