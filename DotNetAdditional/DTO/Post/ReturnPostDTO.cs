@@ -10,6 +10,7 @@ public class ReturnPostDTO
     public string Content { get; set; }
     public DateTime Created { get; set; }
     public string videoURL { get; set; }
+    public bool isLiked { get; set; }
    
     public ReturnCategoryDTO[] Categories { get; set; }
    

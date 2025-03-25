@@ -36,6 +36,7 @@ public class PostController:ControllerBase
     public async Task<IActionResult> GetPosts(int page, string? categories, bool liked,int? creatorId)
     {
         var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+        Console.WriteLine(categories);
         var post = await _postService.GetPosts(page, categories, liked,userEmail, creatorId);
         return Ok(post);
     }

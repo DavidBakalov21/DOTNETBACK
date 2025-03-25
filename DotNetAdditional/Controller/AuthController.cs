@@ -29,6 +29,9 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Register([FromBody] RegisterDTO request)
     {
         var (at, rt) =await _authService.Register(request.Username, request.Password, request.Email);
+        Console.WriteLine(request.Email);
+        Console.WriteLine(request.Username);
+        Console.WriteLine(request.Password);
         return Ok(new { AccessToken = at, RefreshToken = rt });
     }
     [HttpGet("refresh")]

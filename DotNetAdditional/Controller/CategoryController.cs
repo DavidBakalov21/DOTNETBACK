@@ -31,7 +31,6 @@ public class CategoryController:ControllerBase
 
 
     [HttpGet]
-    [Authorize(AuthenticationSchemes = "Access")]
     public async Task<IActionResult> GetCategories()
     {
         var post = await _categoryService.GetCategory();

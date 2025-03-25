@@ -93,6 +93,7 @@ public class PostService:IPostService
                 Content = p.Content,
                 Created = p.Created,
                 videoURL = p.videoURL,
+                isLiked = p.Likers.Any(l => l.UserId == userId),
                 Categories = p.PostCategories
                     .Select(pc => new ReturnCategoryDTO
                     {
