@@ -11,37 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0a5f748c-56d3-4136-bad0-15c711d28e6f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAdditional/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/CategoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/Controller/PostController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Controller/PostController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/DTO/Post/ReturnPostDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/DTO/Post/ReturnPostDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/Services/PostService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/DotNetAdditional.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/ref/DotNetAdditional.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/refint/DotNetAdditional.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/refint/DotNetAdditional.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DotNetAdditional.props" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.DotNetAdditional.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DotNetAdditional.props" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.DotNetAdditional.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/DotNetAdditional.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/DotNetAdditional.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/DotNetAdditional.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/DotNetAdditional.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/DotNetAdditional.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/DotNetAdditional.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAdditional/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAdditional/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +144,10 @@
       <workItem from="1742148872542" duration="3461000" />
       <workItem from="1742209964411" duration="2602000" />
       <workItem from="1742748587436" duration="9138000" />
-      <workItem from="1742918565109" duration="4857000" />
+      <workItem from="1742918565109" duration="7391000" />
+      <workItem from="1743032146558" duration="2681000" />
+      <workItem from="1743160565789" duration="6055000" />
+      <workItem from="1743167265400" duration="2344000" />
     </task>
     <task id="LOCAL-00001" summary="auth">
       <option name="closed" value="true" />

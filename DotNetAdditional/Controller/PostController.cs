@@ -41,34 +41,34 @@ public class PostController:ControllerBase
         return Ok(post);
     }
     
-    [HttpDelete("{id:int}")]
-    [Authorize(AuthenticationSchemes = "Access")]
-    public async Task<IActionResult> DeletePost(int id)
-    {
-        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-        
-        
-        var deleteStatus = await _postService.DeletePost(id, userEmail);
-        if (deleteStatus == false)
+        [HttpDelete("{id:int}")]
+        [Authorize(AuthenticationSchemes = "Access")]
+        public async Task<IActionResult> DeletePost(int id)
         {
-            return NotFound(); 
-        } 
-        return NoContent();
-    }
+            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+            
+            
+            var deleteStatus = await _postService.DeletePost(id, userEmail);
+            if (deleteStatus == false)
+            {
+                return NotFound(); 
+            } 
+            return NoContent();
+        }
 
 
-    [HttpPut]
-    [Authorize(AuthenticationSchemes = "Access")]
-    public async Task<IActionResult> UpdatePost([FromBody] UpdatePostDTO request)
-    {
-        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-        var updatedPost= await _postService.EditPost(request, userEmail);
-        return Ok(updatedPost);
-    }
+        [HttpPut]
+        [Authorize(AuthenticationSchemes = "Access")]
+        public async Task<IActionResult> UpdatePost([FromBody] UpdatePostDTO request)
+        {
+            var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+            var updatedPost= await _postService.EditPost(request, userEmail);
+            return Ok(updatedPost);
+        }
 
     [HttpGet("ownPosts")]
     [Authorize(AuthenticationSchemes = "Access")]
-    public async Task<IActionResult> GetOwnPosts(int page, string? categories)
+    public async Task<IActionResult> GetOwnPosts(int page, string? categories, bool liked)
     {
         var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
         var post = await _postService.GetOwnPosts(page, categories, userEmail);
@@ -77,10 +77,10 @@ public class PostController:ControllerBase
     
     [HttpPost("toggleLike")]
     [Authorize(AuthenticationSchemes = "Access")]
-    public async Task<IActionResult> ToggleLike([FromBody] int postId)
+    public async Task<IActionResult> ToggleLike([FromBody] PostIdDTO postId)
     {
         var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
-        var status = await _postService.ToggleLike(postId, userEmail);
+        var status = await _postService.ToggleLike(postId.Id, userEmail);
         return Ok(status);
     }
 }
