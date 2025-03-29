@@ -57,7 +57,7 @@ public class PostController:ControllerBase
         }
 
 
-        [HttpPut]
+        [HttpPatch]
         [Authorize(AuthenticationSchemes = "Access")]
         public async Task<IActionResult> UpdatePost([FromBody] UpdatePostDTO request)
         {
