@@ -1,17 +1,21 @@
 .env
 # Default ignored files
-/shelf/
-/workspace.xml
+DotNetAdditional/shelf/
+DotNetAdditional/workspace.xml
 # Rider ignored files
-/.idea.DotNetAdditional.iml
-/modules.xml
-/contentModel.xml
-/projectSettingsUpdater.xml
+DotNetAdditional/.idea.DotNetAdditional.iml
+DotNetAdditional/modules.xml
+DotNetAdditional/contentModel.xml
+DotNetAdditional/projectSettingsUpdater.xml
 # Editor-based HTTP Client requests
-/httpRequests/
+DotNetAdditional/httpRequests/
 # Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-/.env
-*.dll
+DotNetAdditional/dataSources/
+DotNetAdditional/dataSources.local.xml
+DotNetAdditional/.env
+DotNetAdditional/*.dll
 /bin/
+DotNetAdditional/.idea
+DotNetAdditional/bin
+DotNetAdditional/obj
+.idea
