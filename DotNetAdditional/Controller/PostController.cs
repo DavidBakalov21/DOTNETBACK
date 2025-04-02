@@ -61,6 +61,9 @@ public class PostController:ControllerBase
         [Authorize(AuthenticationSchemes = "Access")]
         public async Task<IActionResult> UpdatePost([FromBody] UpdatePostDTO request)
         {
+            Console.WriteLine("---------------------------------------------------------------------------");
+            Console.WriteLine($"{request.PostId}, {request.Content}, {request.Title}, {request.CategoryIds}, {request.videoURL}");
+            Console.WriteLine("---------------------------------------------------------------------------");
             var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
             var updatedPost= await _postService.EditPost(request, userEmail);
             return Ok(updatedPost);

@@ -148,20 +148,30 @@ public class PostService:IPostService
         
         await _dbContext.SaveChangesAsync();
 
+        var updatedPost = await _dbContext.Post
+            .Include(p => p.PostCategories)
+            .ThenInclude(pc => pc.Category)
+            .FirstOrDefaultAsync(p => p.Id == post.Id);
+
+        if (updatedPost is null)
+        {
+            return null;
+        }
+
         return new ReturnOwnPostDTO
         {
-            Id = post.Id,
-            UserId = post.UserId,
-            Title = post.Title,
-            Content = post.Content,
-            Created = post.Created,
-            videoURL = post.videoURL,
-            Categories = post.PostCategories
+            Id = updatedPost.Id,
+            UserId = updatedPost.UserId,
+            Title = updatedPost.Title,
+            Content = updatedPost.Content,
+            Created = updatedPost.Created,
+            videoURL = updatedPost.videoURL,
+            Categories = updatedPost.PostCategories
                 .Select(pc => new ReturnCategoryDTO
                 {
                     Id = pc.Category.Id,
                     Name = pc.Category.Name
-                }).ToArray() 
+                }).ToArray()
         };
     }
 
