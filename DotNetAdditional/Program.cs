@@ -62,23 +62,8 @@ builder.Services.AddAuthentication()
                 Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("RT_SECRET")))
         };
     });
-var connectionUrl = builder.Configuration.GetConnectionString("Connection");
 
-var databaseUri = new Uri(connectionUrl);
-var userInfo = databaseUri.UserInfo.Split(':');
-
-var connectionString = new Npgsql.NpgsqlConnectionStringBuilder
-{
-    Host = databaseUri.Host,
-    Port = databaseUri.Port,
-    Username = userInfo[0],
-    Password = userInfo[1],
-    Database = databaseUri.AbsolutePath.TrimStart('/'),
-    TrustServerCertificate = true
-}.ToString();
-
-builder.Services.AddDbContext<DBContext>(options =>
-    options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<DBContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("Connection")));
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPostService, PostService>();
