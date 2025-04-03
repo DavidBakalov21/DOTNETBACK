@@ -14,5 +14,5 @@ COPY --from=build /app/publish .
 
 EXPOSE 8080
 
-#ENTRYPOINT ["dotnet", "DNET.Backend.Api.dll"]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet DNET.Backend.Api.dll
+ENTRYPOINT ["dotnet", "DotNetAdditional.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet DotNetAdditional.dll
