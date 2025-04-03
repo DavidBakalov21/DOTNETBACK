@@ -69,6 +69,11 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<DBContext>();
+    db.Database.Migrate();
+}
 
 
 app.MapControllers();
